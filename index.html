@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>Breathe</title>
+    <style>
+        body {
+            background: #66CCFF;
+            font-family: '微软雅黑', sans-serif;
+            text-align: center;
+            padding: 50px 20px;
+            margin: 0;
+            color: #fff;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background: rgba(255,255,255,0.2);
+            border-radius: 20px;
+            padding: 30px;
+        }
+        h1 {
+            font-size: 48px;
+            margin: 0 0 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+        .days {
+            font-size: 72px;
+            font-weight: bold;
+            margin: 20px 0;
+            color: #fff;
+        }
+        .label {
+            font-size: 20px;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+        .event {
+            font-size: 24px;
+            margin: 30px 0;
+            background: rgba(255,255,255,0.3);
+            padding: 15px;
+            border-radius: 10px;
+        }
+        .qq {
+            margin-top: 40px;
+            font-size: 18px;
+            opacity: 0.8;
+        }
+        .heart {
+            color: #ff6b6b;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>永远喜欢洛天依</h1>
+        <div class="heart">❤️</div>
+        
+        <!-- 正计时 -->
+        <div class="days" id="days"></div>
+        <div class="label">喜欢天依的第 · 天</div>
+        
+        <!-- 第六场线下 -->
+        <div class="event">
+            下一场线下活动 · 深圳 · 3月14日<br>
+            「春日银河」音乐派对
+        </div>
+        
+        <!-- QQ -->
+        <div class="qq">
+            QQ：26768487<br>
+            —— 小宋师兄Breathe
+        </div>
+    </div>
+
+    <script>
+        // 从2022年12月20日开始计算
+        const startDate = new Date(2022, 11, 20); // 月份从0开始，11=12月
+        const today = new Date();
+        
+        // 计算天数
+        const diffTime = today - startDate;
+        const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
+        
+        // 显示
+        document.getElementById('days').textContent = diffDays;
+    </script>
+</body>
+</html>

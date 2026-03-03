@@ -2,7 +2,7 @@
 <html lang="zh">
 <head>
     <meta charset="UTF-8">
-    <title>Breathe</title>
+    <title>永远喜欢洛天依</title>
     <style>
         body {
             background: #66CCFF;
@@ -42,6 +42,11 @@
             padding: 15px;
             border-radius: 10px;
         }
+        .visit {
+            margin-top: 30px;
+            font-size: 18px;
+            opacity: 0.8;
+        }
         .qq {
             margin-top: 40px;
             font-size: 18px;
@@ -52,6 +57,8 @@
             font-size: 30px;
         }
     </style>
+    <!-- 不蒜子脚本 -->
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
 </head>
 <body>
     <div class="container">
@@ -66,6 +73,11 @@
         <div class="event">
             下一场线下活动 · 深圳 · 3月14日<br>
             「春日银河」音乐派对
+        </div>
+        
+        <!-- 访问人数 -->
+        <div class="visit">
+            🌐 本站总访问量 <span id="busuanzi_value_site_pv"></span> 次
         </div>
         
         <!-- QQ -->
@@ -87,5 +99,65 @@
         // 显示
         document.getElementById('days').textContent = diffDays;
     </script>
+<script>
+    document.addEventListener('click', function(e) {
+        const heart = document.createElement('div');
+        heart.innerHTML = '∞';
+        heart.style.position = 'fixed';
+        heart.style.left = e.clientX + 'px';
+        heart.style.top = e.clientY + 'px';
+        heart.style.fontSize = '30px';
+        heart.style.color = '#ff6b6b';
+        heart.style.pointerEvents = 'none';
+        heart.style.animation = 'floatUp 1.5s ease-out';
+        document.body.appendChild(heart);
+        
+        setTimeout(() => heart.remove(), 1500);
+    });
+</script>
+
+<!-- 文字跟随特效 - 节流版 -->
+<script>
+    const letters = ['∞'];
+    let currentLetter = 0;
+    let lastTime = 0;
+    const throttleTime = 50; // 毫秒，50ms 生成一个
+    
+    document.addEventListener('mousemove', function(e) {
+        const now = Date.now();
+        if (now - lastTime < throttleTime) return; // 太密集就跳过
+        lastTime = now;
+        
+        const span = document.createElement('span');
+        span.textContent = letters[currentLetter];
+        span.style.position = 'fixed';
+        span.style.left = e.clientX + 'px';
+        span.style.top = e.clientY + 'px';
+        span.style.fontSize = '40px';
+        span.style.fontWeight = 'bold';
+        span.style.color = '#66CCFF';
+        span.style.textShadow = '2px 2px 4px rgba(0,0,0,0.5)';
+        span.style.pointerEvents = 'none';
+        span.style.opacity = '1';
+        span.style.transition = 'opacity 1.5s, transform 1.5s';
+        span.style.transform = 'translateY(0)';
+        document.body.appendChild(span);
+        
+        setTimeout(() => {
+            span.style.opacity = '0';
+            span.style.transform = 'translateY(-30px)';
+        }, 50);
+        
+        setTimeout(() => span.remove(), 2000);
+        
+        currentLetter = (currentLetter + 1) % letters.length;
+    });
+</script>
+<style>
+    @keyframes floatUp {
+        0% { transform: translateY(0); opacity: 1; }
+        100% { transform: translateY(-100px); opacity: 0; }
+    }
+</style>
 </body>
 </html>

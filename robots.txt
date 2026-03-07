@@ -1,0 +1,10 @@
+# robots.txt for luotianyi.co
+
+# 所有搜索引擎
+User-agent: *
+
+# 允许抓取所有页面
+Allow: /
+
+# 网站地图位置
+Sitemap: https://luotianyi.co/sitemap.xml

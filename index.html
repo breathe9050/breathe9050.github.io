@@ -2,9 +2,26 @@
 <html lang="zh">
 <head>
     <meta charset="UTF-8">
-<meta name="msvalidate.01" content="B9D3782B9817A6944E8E527B0C9C71F6" />
-<meta name="baidu-site-verification" content="codeva-ETp4BEQcZn" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="msvalidate.01" content="B9D3782B9817A6944E8E527B0C9C71F6" />
+    <meta name="baidu-site-verification" content="codeva-ETp4BEQcZn" />
     <title>永远喜欢洛天依</title>
+    <meta name="description" content="一个粉丝为洛天依建立的个人小站：记录喜欢天依的每一天，分享线下活动与最新情报。">
+    <link rel="canonical" href="https://luotianyi.co/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="永远喜欢洛天依">
+    <meta property="og:title" content="永远喜欢洛天依">
+    <meta property="og:description" content="一个粉丝为洛天依建立的个人小站：记录喜欢天依的每一天，分享线下活动与最新情报。">
+    <meta property="og:url" content="https://luotianyi.co/">
+    <meta property="og:image" content="https://luotianyi.co/og-cover.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="zh_CN">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="永远喜欢洛天依">
+    <meta name="twitter:description" content="一个粉丝为洛天依建立的个人小站：记录喜欢天依的每一天，分享线下活动与最新情报。">
+    <meta name="twitter:image" content="https://luotianyi.co/og-cover.png">
+    <link rel="icon" href="favicon.png" type="image/png">
     <style>
         body {
             background: #66CCFF;
@@ -31,89 +48,128 @@
             font-weight: bold;
             margin: 20px 0;
             color: #fff;
+            text-shadow: 0 1px 3px rgba(0,0,0,0.18);
         }
         .label {
             font-size: 20px;
             margin-bottom: 30px;
-            opacity: 0.9;
+            opacity: 0.95;
+            text-shadow: 0 1px 2px rgba(0,0,0,0.18);
         }
         .event {
             font-size: 24px;
+            line-height: 1.6;
             margin: 30px 0;
             background: rgba(255,255,255,0.3);
             padding: 15px;
             border-radius: 10px;
+            text-shadow: 0 1px 2px rgba(0,0,0,0.18);
         }
         .visit {
             margin-top: 30px;
             font-size: 18px;
-            opacity: 0.8;
+            opacity: 0.9;
+            text-shadow: 0 1px 2px rgba(0,0,0,0.18);
         }
         .qq {
             margin-top: 40px;
             font-size: 18px;
-            opacity: 0.8;
+            opacity: 0.9;
+            text-shadow: 0 1px 2px rgba(0,0,0,0.18);
         }
         .heart {
             color: #ff6b6b;
             font-size: 30px;
         }
+        .footer {
+            max-width: 600px;
+            margin: 22px auto 0;
+            padding: 0 20px 40px;
+        }
+        .disclaimer {
+            font-size: 13px;
+            line-height: 1.7;
+            opacity: 0.9;
+            text-shadow: 0 1px 2px rgba(0,0,0,0.18);
+        }
+        .sites {
+            margin-top: 18px;
+            font-size: 14px;
+            line-height: 2.1;
+        }
+        .sites p {
+            margin: 0 0 4px;
+            opacity: 0.9;
+            text-shadow: 0 1px 2px rgba(0,0,0,0.18);
+        }
+        .sites a {
+            display: inline-block;
+            margin: 2px 5px;
+            padding: 1px 2px;
+            color: #ffffff;
+            text-decoration: none;
+            border-bottom: 1px solid rgba(255,255,255,0.5);
+        }
+        .sites a:hover {
+            border-bottom-color: #ffffff;
+        }
+        @media (max-width: 480px) {
+            body { padding: 30px 14px; }
+            .container { padding: 24px 18px; border-radius: 16px; }
+            h1 { font-size: 34px; }
+            .days { font-size: 60px; }
+            .event { font-size: 18px; }
+            .label { font-size: 17px; }
+            .visit, .qq { font-size: 16px; }
+            .footer { padding: 0 14px 32px; }
+        }
     </style>
-    <!-- 不蒜子脚本 -->
     <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-<link rel="icon" href="favicon.png" type="image/png">
 </head>
 <body>
     <div class="container">
         <h1>永远喜欢洛天依</h1>
         <div class="heart">❤️</div>
-        
-        <!-- 正计时 -->
+
         <div class="days" id="days"></div>
         <div class="label">喜欢天依的第 · 天</div>
-        
-        <!-- 第六场线下 -->
+
         <div class="event">
             下一场线下活动<br>
-         2026洛天依「无限共鸣·纯蓝幻乐」全国巡回演唱会     </div>
-        
-        <!-- 访问人数 -->
+          2026洛天依「无限共鸣·纯蓝幻乐」全国巡回演唱会</div>
+
         <div class="visit">
             🌐 本站总访问量 <span id="busuanzi_value_site_pv"></span> 次
         </div>
-        
-        <!-- QQ -->
+
         <div class="qq">
             QQ：26768487<br>
             —— 小宋师兄Breathe
         </div>
     </div>
 
-<div class="disclaimer">
-    ⚠️ 本站为个人出于爱好所建立的粉丝站点，与上海禾念信息科技有限公司无任何关联。
-</div>
+    <div class="footer">
+        <div class="disclaimer">
+            ⚠️ 本站为个人出于爱好所建立的粉丝站点，与上海禾念信息科技有限公司无任何关联。
+        </div>
 
-<!-- 其他域名 -->
-<div class="sites">
-    <p>我的其他域名：</p >
-    <a href="https://luotianyi.co" target="_blank">luotianyi.co</a >
-    <a href="https://20120712.com" target="_blank">20120712.com</a >
-    <a href="https://天依.com" target="_blank">天依.com</a >
-    <a href="https://洛天依.vip" target="_blank">洛天依.vip</a >
-    <a href="https://锦依卫.com" target="_blank">锦依卫.com</a >
-</div>
-
+        <div class="sites">
+            <p>我的其他域名：</p>
+            <a href="https://luotianyi.co" target="_blank" rel="noopener">luotianyi.co</a>
+            <a href="https://20120712.com" target="_blank" rel="noopener">20120712.com</a>
+            <a href="https://天依.com" target="_blank" rel="noopener">天依.com</a>
+            <a href="https://洛天依.vip" target="_blank" rel="noopener">洛天依.vip</a>
+            <a href="https://锦依卫.com" target="_blank" rel="noopener">锦依卫.com</a>
+        </div>
+    </div>
 
     <script>
-        // 从2022年12月20日开始计算
-        const startDate = new Date(2022, 11, 20); // 月份从0开始，11=12月
+        const startDate = new Date(2022, 11, 20);
         const today = new Date();
-        
-        // 计算天数
+
         const diffTime = today - startDate;
         const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
-        
-        // 显示
+
         document.getElementById('days').textContent = diffDays;
     </script>
 <script>
@@ -128,23 +184,22 @@
         heart.style.pointerEvents = 'none';
         heart.style.animation = 'floatUp 1.5s ease-out';
         document.body.appendChild(heart);
-        
+
         setTimeout(() => heart.remove(), 1500);
     });
 </script>
 
-<!-- 文字跟随特效 - 节流版 -->
 <script>
     const letters = ['∞'];
     let currentLetter = 0;
     let lastTime = 0;
-    const throttleTime = 50; // 毫秒，50ms 生成一个
-    
+    const throttleTime = 50;
+
     document.addEventListener('mousemove', function(e) {
         const now = Date.now();
-        if (now - lastTime < throttleTime) return; // 太密集就跳过
+        if (now - lastTime < throttleTime) return;
         lastTime = now;
-        
+
         const span = document.createElement('span');
         span.textContent = letters[currentLetter];
         span.style.position = 'fixed';
@@ -159,14 +214,14 @@
         span.style.transition = 'opacity 1.5s, transform 1.5s';
         span.style.transform = 'translateY(0)';
         document.body.appendChild(span);
-        
+
         setTimeout(() => {
             span.style.opacity = '0';
             span.style.transform = 'translateY(-30px)';
         }, 50);
-        
+
         setTimeout(() => span.remove(), 2000);
-        
+
         currentLetter = (currentLetter + 1) % letters.length;
     });
 </script>
